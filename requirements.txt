@@ -1,0 +1,4 @@
+google-adk>=0.1.0
+litellm>=1.13.2
+mcp-youtube-search>=0.1.4
+python-dotenv>=1.0.0 
