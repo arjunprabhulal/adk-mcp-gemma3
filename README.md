@@ -270,10 +270,10 @@ adk_mcp_gemma3/
    * There's a known issue with Ollama's JSON format responses and LiteLLM's parsing that can cause a KeyError: 'name' error.
    * This happens when Ollama returns JSON format that isn't specifically a tool call format.
    * Error looks like: `KeyError: 'name'` in `litellm/llms/ollama/completion/transformation.py`
-   * A fix has been submitted in PR #9966 for the LiteLLM package but is still pending approval and merging.
+   * A fix has been submitted in [PR #9966](https://github.com/BerriAI/litellm/pull/9966) for the LiteLLM package but is still pending approval and merging.
    * This bug might cause your application to crash or enter an infinite loop when using function calling with Ollama models.
    * **Temporary workarounds**:
-        * Manually patch your local LiteLLM installation with the changes from PR #9966
+        * Manually patch your local LiteLLM installation with the changes from [PR #9966](https://github.com/BerriAI/litellm/pull/9966)
         * Avoid using `format=json` in Ollama requests if possible
         * Wait for the PR to be merged and update to the next LiteLLM release that includes the fix
 
