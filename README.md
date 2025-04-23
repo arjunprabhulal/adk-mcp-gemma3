@@ -96,7 +96,7 @@ This project showcases how to leverage Google's ADK (Agent Development Kit) and 
 
 ### ADK - Agent Development Kit
 
-**Agent Development Kit (ADK)** is an open-source, code-first Python toolkit for building intelligent AI agents. It provides the infrastructure needed to create agents that can interact with users, reason about tasks, and use tools to complete goals.
+**Agent Development Kit (ADK)** is an open-source, code-first Python toolkit for building intelligent AI agents. 
 
 ### MCP - Model Context Protocol
 
@@ -143,8 +143,8 @@ The MCP YouTube Search tool provides a standardized way for the agent to interac
 
 Clone this repository:
 ```bash
-git clone <your-gitlab-repo-url>
-cd <your-project-directory>
+git clone https://github.com/arjunprabhulal/adk-mcp-gemma3.git
+cd adk-mcp-gemma3
 ```
 
 ### 2. Setup
@@ -178,7 +178,7 @@ ollama pull gemma3:12b
 Run the agent using ADK's browser-based developer UI:
 ```bash
 # Navigate to the parent directory
-cd <your-project-directory>
+cd adk-mcp-gemma3
 
 # Start the web interface
 adk web
