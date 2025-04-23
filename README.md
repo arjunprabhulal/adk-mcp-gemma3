@@ -8,30 +8,30 @@ A practical implementation demonstrating YouTube search functionality using Goog
 
 ## 📚 Table of Contents
 
-* 🔍 Introduction
-* 🏗️ Architecture
-  * 🧩 Core Components
-  * 📊 Architecture Diagram
-  * 🔄 Data Flow
-  * ✨ Technology Highlights
-* 🚀 Features
-* 🧠 Core Concepts
-  * ADK - Agent Development Kit
-  * MCP - Model Context Protocol
-  * Agents in ADK
-  * Tools with MCP
-  * Ollama Integration
-* 📋 Requirements
-* 🚦 Getting Started
-  * 1. Installation Steps
-  * 2. Setup
-  * 3. Usage
-* 🔄 How It Works
-* 📁 Project Structure
-* ⚠️ Troubleshooting
-* 📦 Repository
-* 👨‍💻 Author
-* 📄 License
+* [🔍 Introduction](#-introduction)
+* [🏗️ Architecture](#-architecture)
+  * [🧩 Core Components](#-core-components)
+  * [📊 Architecture Diagram](#-architecture-diagram)
+  * [🔄 Data Flow](#-data-flow)
+  * [✨ Technology Highlights](#-technology-highlights)
+* [🚀 Features](#-features)
+* [🧠 Core Concepts](#-core-concepts)
+  * [ADK - Agent Development Kit](#adk---agent-development-kit)
+  * [MCP - Model Context Protocol](#mcp---model-context-protocol)
+  * [Agents in ADK](#agents-in-adk)
+  * [Tools with MCP](#tools-with-mcp)
+  * [Ollama Integration](#ollama-integration)
+* [📋 Requirements](#-requirements)
+* [🚦 Getting Started](#-getting-started)
+  * [1. Installation Steps](#1-installation-steps)
+  * [2. Setup](#2-setup)
+  * [3. Usage](#3-usage)
+* [🔄 How It Works](#-how-it-works)
+* [📁 Project Structure](#-project-structure)
+* [⚠️ Troubleshooting](#-troubleshooting)
+* [📦 Repository](#-repository)
+* [👨‍💻 Author](#-author)
+* [📄 License](#-license)
 
 ## 🔍 Introduction
 
@@ -173,7 +173,29 @@ ollama pull gemma3:12b
 
 ### 3. Usage
 
-Run the agent:
+#### Option 1: Web-based UI (Recommended for debugging)
+
+Run the agent using ADK's browser-based developer UI:
+```bash
+# Navigate to the parent directory
+cd <your-project-directory>
+
+# Start the web interface
+adk web
+```
+
+You should see output similar to this:
+
+![ADK Web Command Output](Images/adk-web-command.png)
+
+Then open the URL provided (usually `http://localhost:8000`) in your browser.
+* Select "search" from the dropdown menu in the top-left corner
+* Type your query in the chat interface
+* You can inspect tool calls, model responses, and see detailed execution flow
+
+#### Option 2: Command Line
+
+Run the agent directly:
 ```bash
 python -m search
 ```
