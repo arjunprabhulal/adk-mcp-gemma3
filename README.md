@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/arjunprabhulal-adk-mcp-gemma3-badge.png)](https://mseep.ai/app/arjunprabhulal-adk-mcp-gemma3)
+
 # YouTube Search Assistant with ADK, MCP and Gemma 3
 
 A practical implementation demonstrating YouTube search functionality using Google's Agent Development Kit (ADK), Model Context Protocol (MCP), and the Gemma 3 model via Ollama.
